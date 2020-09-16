@@ -1,0 +1,37 @@
+.country-container {
+  position: relative;
+}
+
+.country-nav {
+  font-size: 12px;
+  color: #2d90ff;
+  width: 20px;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 88px;
+}
+
+.country-nav a {
+  display: block;
+}
+
+.country-navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+
+.country-list {
+  position: absolute;
+  width: 100%;
+  top: 44px;
+}
+
+.country-list .country-item {
+  padding-right: 15px;
+}

@@ -1,0 +1,133 @@
+.login-content {
+  padding: 20px;
+}
+
+.login-code {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-btn {
+  border: none;
+  outline: none;
+  background: none;
+  color: #848689;
+  font-size: 14px;
+}
+
+.login-code {
+  position: relative;
+}
+
+.text-btn.login-send-code {
+  width: 100px;
+}
+
+.text-btn.login-send-code::before {
+  display: block;
+  content: '';
+  height: 24px;
+  width: 1px;
+  background: #aaa;
+  position: absolute;
+  top: 50%;
+  right: 110px;
+  transform: translateY(-50%);
+}
+
+.quick-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.login-third-party {
+  text-align: center;
+  color: #848689;
+  font-size: 14px;
+  position: relative;
+}
+
+.login-third-party::before,
+.login-third-party::after {
+  display: block;
+  content: '';
+  width: 80px;
+  height: 1px;
+  background: #aaa;
+  position: absolute;
+  top: 50%;
+}
+
+.login-third-party::before {
+  left: 55px;
+}
+
+.login-third-party::after {
+  right: -25px;
+}
+
+.login-icons {
+  margin: 30px auto;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-icons .iconfont {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.icon-github {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.icon-qq {
+  color: skyblue;
+  background-color: rgba(135, 206, 235, 0.2);
+}
+
+.icon-wechat {
+  color: rgb(74, 192, 90);
+  background-color: rgba(74, 192, 90, 0.2);
+}
+
+.login-policy {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+a.login-policy-btn {
+  color: #4a90e2;
+}
+
+.input {
+  width: 200px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .text-btn.send-code::before {
+    transform: scaleX(0.5) translateY(-50%)
+  }
+  .login-third-party::before, 
+  .login-third-party::after {
+    transform: scaleY(0.5) translateX(-50%)
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+  .text-btn.send-code::before {
+    transform: scaleX(0.3333) translateY(-50%)
+  }
+  .login-third-party::before, 
+  .login-third-party::after {
+    transform: scaleY(0.3333) translateX(-50%)
+  }
+}
